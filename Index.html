@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+    background-image: url(green.jpg)  ;     
+   
+    overflow: initial;
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* filter: blur(150px); */
+   
+}
+.box{
+    position: relative;
+    
+}
+.container{
+    position: relative;
+    width: 400px;
+    min-height: 400px;
+    background-color: rgba(255,255 , 255, 0.2);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    backdrop-filter: blur(2px);   
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5);                            /*sign box content get in center of box*/
+    border: 1px solid rgba( 225 , 225 , 225, 0.5);
+    border-right: rgba( 225 , 225 , 225, 0.2);
+    border-bottom: rgba( 225 , 225 , 225, 0.2);
+}
+.form{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+
+
+.form strong::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background: #fff ;
+}
+.in{
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px ;
+    margin-bottom: 40px;
+}
+.form .inputbox{
+    width: 100%;
+    margin-top: 20px;
+
+
+}
+.form .inputbox input{   /*username, password and submit*/
+    width: 90%;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid rgba( 225 , 225 , 225, 0.5);
+    border-right: rgba( 225 , 225 , 225, 0.2); /* for 3d effect*/
+    border-bottom: rgba( 225 , 225 , 225, 0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); /*email box shadow*/
+}
+.form .inputbox input::placeholder{
+    color: #fff;
+}
+.form .inputbox input[type="submit"]{    /*login btton*/
+    background:#fff ;
+    color: #666;
+    border: none;
+    max-width: 100px ;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: 600;
+    box-shadow: 0px 5px 5px  rgba(44, 43, 43, 0.6);
+}
+.forget{
+   margin-top: 5px; 
+   color: rgb(255, 255, 255);
+}
+.forget a{
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(225, 225, 225) ;
+}
+.form .inputbox input[type="submit"]:hover{
+    background: rgb(19, 241, 11);
+    
+    color: blanchedalmond;
+}
+.forget a:hover{
+   
+color:rgb(19,241,11);
+}
+
+#footer{
+    
+    clear: left;
+    /* Cannot float on Left */
+    position: relative;
+    width: 100%;
+    background: rgba(49, 48, 48, 0.904);
+    color: #FFF;
+    font-family: Arial;
+    text-align: center;
+    padding: 4px;
+    display: inline-flex;
+
+}
+    </style>
+    <title>Login</title>
+</head>
+
+<body>
+    <section>
+        <div class="box">
+            <div class="container">
+                <div class="form">
+                    <p class="in"><strong>Sign In</strong></p>
+                    <form action="send.php" >
+
+                        <div class="inputbox"><input type="text" placeholder="User Name"></div>
+                        <div class="inputbox"><input type="password" placeholder="Password"></div>
+                        <div class="inputbox"><input type="submit" name="Login" value="Login" /></div>
+                        <p class="forget">Forgot Password ?<a href="##" class="link"> Click Here</a></p>
+                        <p class="forget">Don't have an account ? <a href="##" class="link"> Sign Up</a> </p>
+
+                        
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <div id="footer">© Akansh</div>
+   
+
+
+
+
+
+</body>
+<!-- alt+0169 for copyright symbol-->
+</html>
